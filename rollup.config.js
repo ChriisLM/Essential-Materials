@@ -4,19 +4,46 @@ import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import { terser } from 'rollup-plugin-terser';
 import typescript from '@rollup/plugin-typescript';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+const pkg = require('./package.json');
+
+const banner = `
+/*!
+ * ${pkg.name} v1.0.0
+ * ${pkg.description}
+ * (c) ${new Date().getFullYear()} ${pkg.author}
+ * Released under the ${pkg.license} License
+ */
+`;
 
 export default {
   input: 'src/index.ts',
   output: [
-    { file: 'dist/index.cjs.js', format: 'cjs', sourcemap: true },
-    { file: 'dist/index.esm.js', format: 'esm', sourcemap: true }
+    {
+      dir: 'dist',
+      format: 'esm',
+      sourcemap: true,
+      banner,
+      preserveModules: true,
+      preserveModulesRoot: 'src'
+    }
   ],
+  external: ['react', 'react-dom'],
   plugins: [
     peerDepsExternal(),
     resolve(),
     commonjs(),
-    postcss({ modules: true }),
-    typescript({ tsconfig: './tsconfig.json' }),
+    postcss({
+      extract: true,
+      minimize: true,
+      sourceMap: true
+    }),
+    typescript({
+      tsconfig: './tsconfig.json'
+    }),
     terser()
-  ]
+  ],
+  preserveModules: true
 };
