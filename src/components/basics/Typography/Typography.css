@@ -1,0 +1,145 @@
+.typography {
+  margin: 0;
+  padding: 0;
+}
+
+/* Variant */
+
+.typography-h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.typography-h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.typography-h3 {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.typography-h4 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.typography-h5 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.typography-h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.typography-body {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.typography-caption {
+  font-size: 0.875em;
+  font-weight: normal;
+}
+
+.typography-overline {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Colors */
+
+.typography-primary {
+  color: #1e201e;
+}
+
+.typography-secondary {
+  color: #a59d84;
+}
+
+.typography-error {
+  color: #d32f2f;
+}
+
+.typography-warning {
+  color: #ffa000;
+}
+
+.typography-info {
+  color: #0288d1;
+}
+
+.typography-success {
+  color: #388e3c;
+}
+
+.typography-default {
+  color: #212121;
+}
+
+/* Align */
+
+.typography-left {
+  text-align: left;
+}
+
+.typography-center {
+  text-align: center;
+}
+
+.typography-right {
+  text-align: right;
+}
+
+.typography-justify {
+  text-align: justify;
+}
+
+/* Fonts */
+
+.typography-openSans {
+  font-family: var(--Font-Open-Sans), sans-serif;
+}
+
+.typography-roboto {
+  font-family: var(--Font-Roboto), sans-serif;
+}
+
+.typography-poppins {
+  font-family: var(--Font-Popppins), sans-serif;
+}
+
+/* Weight */
+.typography-light {
+  font-weight: lighter;
+}
+
+.typography-normal {
+  font-weight: 400;
+}
+
+.typography-medium {
+  font-weight: 500;
+}
+
+.typography-bold {
+  font-weight: bold;
+}
+
+/* Text Transform */
+
+.typography-uppercase {
+  text-transform: uppercase;
+}
+
+.typography-lowercase {
+  text-transform: lowercase;
+}
+
+.typography-capitalize {
+  text-transform: capitalize;
+}
