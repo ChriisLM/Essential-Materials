@@ -1,0 +1,30 @@
+---
+title: "Avatar"
+sidebar_label: "Avatar"
+---
+
+import AvatarExamples from '@site/src/components/AvatarExamples';
+
+# Avatar 🖼️
+
+El componente `Avatar` se usa para mostrar una imagen de perfil con opciones de tamaño, forma y fallbacks en caso de error.
+
+## **Props**
+| Prop       | Tipo              | Descripción |
+|------------|------------------|-------------|
+| `src`      | `string`          | URL de la imagen. |
+| `alt`      | `string`          | Texto alternativo (por defecto `"Avatar"`). |
+| `size`     | `"small" \| "medium" \| "large"` | Tamaño del avatar. |
+| `fallback` | `string`          | Texto de respaldo si la imagen falla. |
+| `border`   | `string`          | Estilo de borde opcional. |
+| `shape`    | `"circle" \| "square"` | Forma del avatar. |
+| `className` | `string`        | Clases adicionales. |
+| `onClick`  | `() => void`      | Función al hacer clic. |
+
+## **Ejemplos**
+
+### **Tamaños**
+<AvatarExamples.SizeExamples />
+
+### **Formas**
+<AvatarExamples.ShapeExamples />
