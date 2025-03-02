@@ -1,0 +1,66 @@
+---
+id: button
+title: Button
+sidebar_label: Button
+---
+
+import { Button } from 'essential-materials';
+
+# Button
+
+El componente `<Button>` es un botón reutilizable que admite múltiples variantes de estilo y tamaños.
+
+## Uso básico
+
+```tsx
+import { Button } from 'essential-materials';
+
+export default function Example() {
+  return <Button onClick={() => alert("Clicked!")}>Click me</Button>;
+}
+```
+
+## Props
+
+| Prop       | Tipo                                     | Descripción                                  | Valor por defecto |
+|------------|-----------------------------------------|----------------------------------------------|------------------|
+| `variant`  | `"filled" "outline" "text"`      | Estilo del botón.                            | `"filled"`       |
+| `size`     | `"small" "medium" "large"`      | Tamaño del botón.                            | `"medium"`       |
+| `color`    | `"default" "primary" "secondary"` | Color del botón.                             | `"default"`       |
+| `font`     | `"roboto" "arial" "monospace"`  | Fuente del texto en el botón.                | `"roboto"`        |
+| `disabled` | `boolean`                                | Deshabilita el botón.                        | `false`          |
+| `loading`  | `boolean`                                | Muestra un estado de carga.                  | `false`          |
+| `fullWidth`| `boolean`                                | Expande el botón al ancho completo.          | `false`          |
+| `className`| `string`                                 | Clases adicionales para personalización.     | `""`             |
+| `onClick`  | `() => void`                             | Función ejecutada al hacer clic.             | `undefined`      |
+
+
+## Variantes
+
+import { ButtonVariants,ButtonTamanos } from '../../src/components/ButtonExamples';
+
+<ButtonVariants />
+
+## Tamaños
+
+<ButtonTamanos />
+
+## Estados
+
+```tsx live
+export default function Example() {
+  return (
+    <>
+      <Button disabled>Disabled</Button>
+      <Button loading>Loading...</Button>
+    </>
+  );
+}
+```
+## Ancho completo
+
+```tsx live
+export default function Example() {
+  return <Button fullWidth>Full Width</Button>;
+}
+```
