@@ -1,0 +1,32 @@
+---
+title: "CheckBox"
+sidebar_label: "CheckBox"
+---
+
+import {CheckboxExamples} from '../../src/components/CheckBoxExamples';
+
+# Checkbox
+
+El componente **Checkbox** permite seleccionar opciones individuales o múltiples dentro de un formulario.
+
+### Uso
+
+```tsx
+import { Checkbox } from "essential-materials";
+```
+
+### Ejemplos
+
+<CheckboxExamples />
+
+### API
+
+| Propiedad  | Tipo        | Descripción                               | Valores posibles           | Default    |
+|------------|------------|-------------------------------------------|----------------------------|------------|
+| `name`     | `string`   | Nombre del checkbox                      | -                          | `""`       |
+| `checked`  | `boolean`  | Define si está marcado                    | `true`, `false`            | `false`    |
+| `disabled` | `boolean`  | Deshabilita la interacción                 | `true`, `false`            | `false`    |
+| `required` | `boolean`  | Indica si es obligatorio                   | `true`, `false`            | `false`    |
+| `label`    | `string`   | Texto asociado al checkbox                 | `Cualquier texto`          | `""`       |
+| `size`     | `string`   | Tamaño del checkbox                        | `"small"`, `"medium"` | `"small"` |
+| `onChange` | `function` | Función que se ejecuta al cambiar el valor | `(checked: boolean) => void` | `undefined` |
