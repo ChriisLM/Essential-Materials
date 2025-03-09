@@ -1,0 +1,33 @@
+---
+title: "Select"
+sidebar_label: "Select"
+---
+
+import { SelectExamples } from '../../src/components/SelectExamples';
+
+# Select
+
+El componente `Select` permite a los usuarios elegir una opción de una lista desplegable.
+
+### Uso
+
+```tsx
+import { Select } from "essential-materials";
+```
+
+### Ejemplos
+
+<SelectExamples />
+
+### API
+
+| Propiedad    | Tipo                    | Descripción                                    | Valores posibles                        | Default      |
+|-------------|-------------------------|------------------------------------------------|-----------------------------------------|--------------|
+| `name`      | `string`                 | Nombre del campo                               | Cualquier string válido                 | `undefined`  |
+| `options`   | `SelectOption[]`         | Lista de opciones disponibles                 | Array de `{ label, value, disabled }`  | `[]`         |
+| `value`     | `string \| string[]`     | Valor seleccionado                            | String o array de strings               | `undefined`  |
+| `placeholder` | `string`               | Texto mostrado antes de seleccionar una opción | Cualquier string válido                 | `""`         |
+| `disabled`  | `boolean`                | Si el selector debe estar deshabilitado       | `true`, `false`                         | `false`      |
+| `size`      | `"small" \| "medium" \| "large"` | Tamaño del select                        | `"small"`, `"medium"`, `"large"`       | `"medium"`   |
+| `className` | `string`                 | Clases CSS personalizadas                     | `""` o cualquier clase CSS válida       | `""`         |
+| `onChange`  | `(value: string) => void` | Función que se ejecuta al cambiar la opción  | `(value: string) => void`               | `undefined`  |
