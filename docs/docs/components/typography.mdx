@@ -1,0 +1,31 @@
+---
+title: "Typography"
+sidebar_label: "Typography"
+---
+
+import { TypographyExamples } from '../../src/components/TypographyExamples';
+
+# Typography
+
+El componente `Typography` se utiliza para manejar estilos tipográficos como encabezados, párrafos y texto decorativo.
+
+### Uso
+
+```tsx
+import { Typography } from "essential-materials";
+```
+
+### Ejemplos
+
+<TypographyExamples />
+
+### API
+
+| Propiedad   | Tipo                                         | Descripción                                       | Valores posibles                                  | Default   |
+|------------|---------------------------------------------|---------------------------------------------------|-------------------------------------------------|-----------|
+| `variant`  | `"h1" \| "h2" \| "h3" \| "h4" \| "h5" \| "h6" \| "body" \| "caption" \| "overline"` | Tipo de texto | `"h1"`, `"h2"`, `"h3"`, `"h4"`, `"h5"`, `"h6"`, `"body"`, `"caption"`, `"overline"` | `"body"` |
+| `weight`   | `"light" \| "normal" \| "medium" \| "bold"`           | Peso de la fuente                                | `"light"`, `"normal"`, `"medium"`, `"bold"`                 | `"normal"` |
+| `color`    | `"default" \| "primary" \| "secondary" \| "success" \| "warning" \| "error" \| "info"` | Color del texto                           | `"default"`, `"primary"`, `"secondary"`, `"success"`, `"warning"`, `"error"`, `"info"` |
+| `align`    | `"left" \| "center" \| "right" \| "justify"`           | Alineación del texto                            | `"left"`, `"center"`, `"right"`, `"justify"`                 | `"left"` |
+| `font`     | `"openSans" \| "roboto" \| "poppins"`      | Tipo de fuente                                  | `"openSans"`, `"roboto"`, `"poppins"`            | `"roboto"` |
+| `transform`| `"none" \| "uppercase" \| "lowercase" \| "capitalize"`    | Transformación de texto                         | `"none"`, `"uppercase"`, `"lowercase"`, `"capitalize"`          | `"none"` |
