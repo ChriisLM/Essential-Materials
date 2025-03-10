@@ -3,28 +3,31 @@ title: "Avatar"
 sidebar_label: "Avatar"
 ---
 
-import AvatarExamples from '@site/src/components/AvatarExamples';
+import { AvatarExamples } from "../../src/components/AvatarExamples";
 
-# Avatar 🖼️
+# Avatar
 
-El componente `Avatar` se usa para mostrar una imagen de perfil con opciones de tamaño, forma y fallbacks en caso de error.
+El componente `Avatar` muestra una imagen de perfil con opciones de tamaño, forma y estilos personalizados.
 
-## **Props**
-| Prop       | Tipo              | Descripción |
-|------------|------------------|-------------|
-| `src`      | `string`          | URL de la imagen. |
-| `alt`      | `string`          | Texto alternativo (por defecto `"Avatar"`). |
-| `size`     | `"small" \| "medium" \| "large"` | Tamaño del avatar. |
-| `fallback` | `string`          | Texto de respaldo si la imagen falla. |
-| `border`   | `string`          | Estilo de borde opcional. |
-| `shape`    | `"circle" \| "square"` | Forma del avatar. |
-| `className` | `string`        | Clases adicionales. |
-| `onClick`  | `() => void`      | Función al hacer clic. |
+### Uso
 
-## **Ejemplos**
+```tsx
+import { Avatar } from "essential-materials";
+```
 
-### **Tamaños**
-<AvatarExamples.SizeExamples />
+### Ejemplos
 
-### **Formas**
-<AvatarExamples.ShapeExamples />
+<AvatarExamples />
+
+### API
+
+| Propiedad   | Tipo                                | Descripción                          | Valores posibles                    | Default     |
+| ----------- | ----------------------------------- | ------------------------------------ | ----------------------------------- | ----------- |
+| `src`       | `string`                            | URL de la imagen                     | Cualquier URL válida                | `undefined` |
+| `alt`       | `string`                            | Texto alternativo                    | Texto libre                         | `"Avatar"`  |
+| `size`      | `"small" \| "medium" \| "large"`    | Tamaño del avatar                    | `"small"`, `"medium"`, `"large"`    | `"medium"`  |
+| `fallback`  | `string`                            | Texto de respaldo si la imagen falla | Cualquier texto                     | `undefined` |
+| `border`    | `"solid" \| "dashed" \| "dotted"`       | Borde del avatar                     | `"solid"`, `"dashed"`, `"dotted"`       | `undefined` |
+| `shape`     | `"circle" \| "square"` | Forma del avatar                     | `"circle"`, `"square"` | `"circle"`  |
+| `className` | `string`                            | Clases CSS personalizadas            | Clases adicionales                  | `""`        |
+| `onClick`   | `() => void`                        | Función ejecutada al hacer clic      | Callback de evento                  | `undefined` |
