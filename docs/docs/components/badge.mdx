@@ -2,15 +2,31 @@
 title: "Badge"
 sidebar_label: "Badge"
 ---
-import { BadgeExamples } from "@site/src/components/BadgeExamples";
 
-# 🏷️ Badge
+import { BadgeExamples } from "../../src/components/BadgeExamples";
 
-Los **Badges** son indicadores pequeños que resaltan información importante, como notificaciones o estados.
+# Badge
 
-## 📌 Uso
+El componente `Badge` se utiliza para mostrar pequeñas etiquetas de notificación o información adicional sobre otro elemento.
+
+### Uso
 
 ```tsx
 import { Badge } from "essential-materials";
+```
 
-<Badge content="3">🔔</Badge>
+### Ejemplos
+
+<BadgeExamples />
+
+### API
+
+| Propiedad   | Tipo                                                           | Descripción                                  | Valores posibles                                               | Default       |
+| ----------- | -------------------------------------------------------------- | -------------------------------------------- | -------------------------------------------------------------- | ------------- |
+| `variant`   | `"default" \| "success" \| "warning" \| "error"`               | Define el estilo del badge                   | `"default"`, `"success"`, `"warning"`, `"error"`               | `"default"`   |
+| `content`   | `string \| number`                                             | Contenido del badge                          | Texto o número                                                 | `undefined`   |
+| `size`      | `"small" \| "medium" \| "large"`                               | Tamaño del badge                             | `"small"`, `"medium"`, `"large"`                               | `"medium"`    |
+| `position`  | `"top-left" \| "top-right" \| "bottom-left" \| "bottom-right"` | Posición del badge respecto al elemento hijo | `"top-left"`, `"top-right"`, `"bottom-left"`, `"bottom-right"` | `"top-right"` |
+| `isVisible` | `boolean`                                                      | Determina si el badge se muestra             | `true`, `false`                                                | `true`        |
+| `className` | `string`                                                       | Clases CSS adicionales                       | Clases personalizadas                                          | `""`          |
+| `children`  | `ReactNode`                                                    | Elemento sobre el cual se posiciona el badge | Cualquier componente válido en React                           | `undefined`   |
