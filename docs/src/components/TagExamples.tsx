@@ -79,7 +79,7 @@ export function TagExamples() {
       </Container>
       <Container
         title="Variantes"
-        description="Todas las cariantes que se pueden colocar."
+        description="Todas las variantes que se pueden colocar."
         code={TagCodes.Variant}
       >
         <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>

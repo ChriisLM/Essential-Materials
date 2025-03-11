@@ -64,7 +64,7 @@ export function TypographyExamples() {
     >
       <Container
         title="Variantes"
-        description="Las variants permitidas para typography. "
+        description="Las variantes permitidas para typography. "
         code={TypographyCodes.Variant}
       >
         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>

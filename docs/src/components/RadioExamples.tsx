@@ -1,5 +1,5 @@
 import { Radio } from "essential-materials";
-import "../../../src/components/basics/Label/Label.css";
+import "../../../src/components/basics/Radio/Radio.css";
 import Container from "./Utils/Container";
 
 export function RadioExamples() {
