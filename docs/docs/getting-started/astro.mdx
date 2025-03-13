@@ -1,0 +1,43 @@
+---
+sidebar_position: 4
+title: "Astro"
+sidebar_label: "Astro"
+---
+
+## Uso con Astro
+
+Astro permite usar componentes de React dentro de su entorno. Para configurar la librería en Astro:
+
+1. Crea un proyecto Astro:
+
+```bash
+npm create astro@latest
+```
+
+2. Instala las dependencias necesarias:
+
+```bash
+cd mi-astro-app
+npm install essential-materials @astrojs/react
+```
+
+3. Habilita React en `astro.config.mjs`:
+
+```js
+import { defineConfig } from 'astro/config';
+import react from '@astrojs/react';
+
+export default defineConfig({
+  integrations: [react()],
+});
+```
+
+4. Usa un componente en Astro:
+
+```tsx
+import { Tag } from "essential-materials";
+import "essential-materials/dist/index.css";
+
+export default function Demo() {
+  return <Tag variant="primary">React en Astro</Tag>;
+}

@@ -1,0 +1,39 @@
+---
+sidebar_position: 3
+title: "Next.JS"
+sidebar_label: "Next.JS"
+---
+
+## Uso con Next.js
+
+Next.js es un framework que permite renderizado híbrido y SSR. Para usar **essential-materials** en Next.js:
+
+1. Crea un nuevo proyecto Next.js:
+
+```bash
+npx create-next-app@latest mi-next-app --typescript
+```
+
+2. Instala la librería:
+
+```bash
+cd mi-next-app
+npm install essential-materials
+```
+
+3. Importa los componentes en una página:
+
+```tsx
+import { Avatar } from "essential-materials";
+import "essential-materials/dist/index.css";
+
+export default function Home() {
+  return <Avatar src="https://i.pravatar.cc/150?img=1" size="small" />;
+}
+```
+
+Inicia el servidor con:
+
+```bash
+npm run dev
+```

@@ -1,0 +1,38 @@
+---
+sidebar_position: 5
+title: "Remix"
+sidebar_label: "Remix"
+---
+
+## Uso con Remix
+
+Remix es ideal para aplicaciones con SSR y manejo de rutas anidadas. Para instalar la librería:
+
+1. Crea un nuevo proyecto Remix:
+
+```bash
+npx create-remix@latest
+```
+
+2. Instala la librería:
+
+```bash
+npm install essential-materials
+```
+
+3. Importa los componentes en un archivo de Remix:
+
+```tsx
+import { Switch } from "essential-materials";
+import "essential-materials/dist/index.css";
+
+export default function Index() {
+  return <Switch checked={true} />;
+}
+```
+
+Ejecuta el servidor con:
+
+```bash
+npm run dev
+```
