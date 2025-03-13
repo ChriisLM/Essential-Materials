@@ -1,0 +1,30 @@
+---
+title: "Divider"
+sidebar_label: "Divider"
+---
+
+import {DividerExamples} from '../../src/components/DividerExamples';
+
+# Divider
+
+El componente `Divider` se usa para separar visualmente elementos en la interfaz.
+
+### Uso
+
+```tsx
+import { Divider } from "essential-materials";
+```
+
+### Ejemplos
+
+<DividerExamples />
+
+### API
+
+| Propiedad    | Tipo       | Descripción                                       | Valores posibles                            | Default    |
+|-------------|-----------|---------------------------------------------------|---------------------------------------------|------------|
+| `orientation` | `string`  | Dirección del divisor                             | `"horizontal"`, `"vertical"`                | `"horizontal"` |
+| `variant`    | `string`  | Estilo del divisor                                | `"solid"`, `"dashed"`, `"dotted"`           | `"solid"`  |
+| `thickness`  | `number`  | Grosor de la línea                                | Cualquier número                            | `1`        |
+| `spacing`    | `string`  | Espaciado alrededor del divisor                   | `"small"`, `"medium"`, `"large"`            | `"small"`  |
+| `className`  | `string`  | Clases CSS personalizadas                        | `""` o cualquier clase CSS válida           | `""`       |

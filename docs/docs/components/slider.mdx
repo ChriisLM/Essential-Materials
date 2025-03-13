@@ -1,0 +1,35 @@
+---
+title: "Slider"
+sidebar_label: "Slider"
+---
+
+import { SliderExamples } from '../../src/components/SliderExamples';
+
+# Slider
+
+El componente `Slider` permite a los usuarios seleccionar un valor dentro de un rango deslizante.
+
+### Uso
+
+```tsx
+import { Slider } from "essential-materials";
+```
+
+### Ejemplos
+
+<SliderExamples />
+
+### API
+
+| Propiedad    | Tipo                    | Descripción                                      | Valores posibles                           | Default      |
+|-------------|-------------------------|--------------------------------------------------|--------------------------------------------|--------------|
+| `value`     | `number`                 | Valor inicial del slider                        | Cualquier número dentro del rango         | `undefined`  |
+| `min`       | `number`                 | Valor mínimo permitido                          | Cualquier número                          | `0`          |
+| `max`       | `number`                 | Valor máximo permitido                          | Cualquier número                          | `100`        |
+| `step`      | `number`                 | Incremento entre valores                        | Cualquier número positivo                 | `1`          |
+| `size`      | `"small" \| "medium" \| "large"` | Tamaño del slider                      | `"small"`, `"medium"`, `"large"`         | `"medium"`   |
+| `marks`     | `{ [key: number]: string }` | Marcas visibles en el slider             | Objeto con valores y etiquetas           | `undefined`  |
+| `disabled`  | `boolean`                | Si el slider debe estar deshabilitado           | `true`, `false`                          | `false`      |
+| `fullWidth` | `boolean`                | Si el slider debe ocupar todo el ancho          | `true`, `false`                          | `false`      |
+| `className` | `string`                 | Clases CSS personalizadas                       | `""` o cualquier clase CSS válida        | `""`         |
+| `onChange`  | `(value: number) => void` | Función que se ejecuta al cambiar el valor      | `(value: number) => void`                 | `undefined`  |

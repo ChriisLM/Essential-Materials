@@ -1,0 +1,33 @@
+---
+title: "Radio"
+sidebar_label: "Radio"
+---
+
+import { RadioExamples } from '../../src/components/RadioExamples';
+
+# Radio
+
+El componente `Radio` permite a los usuarios seleccionar una única opción dentro de un grupo.
+
+### Uso
+
+```tsx
+import { Radio } from "essential-materials";
+```
+
+### Ejemplos
+
+<RadioExamples />
+
+### API
+
+| Propiedad   | Tipo       | Descripción                                    | Valores posibles             | Default      |
+|------------|-----------|------------------------------------------------|------------------------------|--------------|
+| `name`     | `string`  | Nombre del grupo de opciones                   | Cualquier string válido      | `undefined`  |
+| `label`    | `string`  | Texto que describe la opción                   | Cualquier string válido      | `""`         |
+| `size`     | `string`  | Tamaño del radio                               | `"small"`, `"medium"`, `"large"` | `"medium"` |
+| `checked`  | `boolean` | Indica si el radio está seleccionado           | `true`, `false`              | `false`      |
+| `disabled` | `boolean` | Si el radio debe mostrarse deshabilitado       | `true`, `false`              | `false`      |
+| `required` | `boolean` | Si la selección es obligatoria                 | `true`, `false`              | `false`      |
+| `className` | `string` | Clases CSS personalizadas                      | `""` o cualquier clase CSS válida | `""` |
+| `onChange` | `function` | Función que se ejecuta al cambiar el valor    | `(value: boolean) => void`   | `undefined`  |

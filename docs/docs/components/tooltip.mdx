@@ -1,0 +1,33 @@
+---
+title: "Tooltip"
+sidebar_label: "Tooltip"
+---
+
+import { TooltipExamples } from '../../src/components/TooltipExamples';
+
+# Tooltip
+
+El componente `Tooltip` muestra un mensaje emergente cuando el usuario interactúa con un elemento.
+
+### Uso
+
+```tsx
+import { Tooltip } from "essential-materials";
+```
+
+### Ejemplos
+
+<TooltipExamples />
+
+### API
+
+| Propiedad  | Tipo                                      | Descripción                                      | Valores posibles                          | Default  |
+|------------|------------------------------------------|--------------------------------------------------|------------------------------------------|----------|
+| `content`  | `string`                                | Texto del tooltip                               | `""` o cualquier texto                   | -        |
+| `trigger`  | `"hover" \| "click" \| "focus"`        | Evento que activa el tooltip                    | `"hover"`, `"click"`, `"focus"`         | `"hover"` |
+| `position` | `"top" \| "bottom" \| "left" \| "right"` | Posición del tooltip respecto al elemento       | `"top"`, `"bottom"`, `"left"`, `"right"` | `"top"` |
+| `delay`    | `number`                                | Tiempo en ms antes de mostrar el tooltip       | `>= 0`                                  | `200`    |
+| `maxWidth` | `number`                                | Ancho máximo del tooltip                        | `>= 0`                                  | `200`    |
+| `disabled` | `boolean`                               | Desactiva el tooltip                            | `true`, `false`                          | `false`  |
+| `arrow`    | `boolean`                               | Muestra una flecha apuntando al elemento        | `true`, `false`                          | `true`   |
+| `className`| `string`                                | Clases CSS personalizadas                       | `""` o cualquier clase válida            | `""`     |

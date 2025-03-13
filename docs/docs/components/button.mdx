@@ -1,0 +1,35 @@
+---
+title: "Button"
+sidebar_label: "Button"
+---
+
+import { ButtonExamples } from "../../src/components/ButtonExamples";
+
+# Button
+
+El componente `Button` es un botón personalizable con múltiples variantes, colores y tamaños.
+
+### Uso
+
+```tsx
+import { Button } from "essential-materials";
+```
+
+### Ejemplos
+
+<ButtonExamples />
+
+### API
+
+| Propiedad   | Tipo                                                | Descripción                                      | Valores posibles                                    | Default     |
+| ----------- | --------------------------------------------------- | ------------------------------------------------ | --------------------------------------------------- | ----------- |
+| `variant`   | `"filled" \| "outlined" \| "dashed" \| "text"`                  | Define el estilo del botón                       | `"filled"`, `"outlined"`, `"dashed"`, `"text"`                  | `"filled"`  |
+| `size`      | `"small" \| "medium" \| "large"`                    | Tamaño del botón                                 | `"small"`, `"medium"`, `"large"`                    | `"medium"`  |
+| `color`     | `"default" \| "primary" \| "secondary"` | Color del botón                                  | `"default"`, `"primary"`, `"secondary"` | `"default"` |
+| `font`      | `"openSans" \| "roboto" \| "poppins"`                | Tipo de fuente del botón                         | `"openSans"`, `"roboto"`, `"poppins"`                | `"roboto"`  |
+| `disabled`  | `boolean`                                           | Deshabilita el botón                             | `true`, `false`                                     | `false`     |
+| `loading`   | `boolean`                                           | Muestra un estado de carga                       | `true`, `false`                                     | `false`     |
+| `fullWidth` | `boolean`                                           | Hace que el botón ocupe todo el ancho disponible | `true`, `false`                                     | `false`     |
+| `className` | `string`                                            | Clases CSS adicionales                           | Clases personalizadas                               | `""`        |
+| `onClick`   | `() => void`                                        | Función ejecutada al hacer clic                  | Función de JavaScript                               | `undefined` |
+| `children`  | `ReactNode`                                         | Contenido dentro del botón                       | Texto o íconos                                      | `undefined` |

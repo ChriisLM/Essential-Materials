@@ -1,0 +1,33 @@
+---
+title: "Input"
+sidebar_label: "Input"
+---
+
+import {InputExamples} from '../../src/components/InputExamples';
+
+# Input
+
+El componente `Input` permite la entrada de texto en formularios y otros elementos interactivos.
+
+### Uso
+
+```tsx
+import { Input } from "essential-materials";
+```
+
+### Ejemplos
+
+<InputExamples />
+
+### API
+
+| Propiedad    | Tipo       | Descripción                                      | Valores posibles                      | Default      |
+|-------------|-----------|--------------------------------------------------|---------------------------------------|--------------|
+| `name`      | `string`  | Nombre del input                                 | Cualquier string                     | `undefined`  |
+| `value`     | `string`  | Valor del input                                  | Cualquier string                     | `""`         |
+| `type`      | `string`  | Tipo de input                                    | `"text"`, `"password"`, `"email"`, etc. | `"text"` |
+| `size`      | `string`  | Tamaño del input                                 | `"small"`, `"medium"`, `"large"`     | `"medium"`   |
+| `placeholder` | `string` | Texto de referencia dentro del input            | Cualquier string                     | `undefined`  |
+| `fullWidth` | `boolean` | Si el input ocupa el ancho completo              | `true`, `false`                      | `false`      |
+| `className` | `string`  | Clases CSS personalizadas                        | `""` o cualquier clase CSS válida    | `""`         |
+| `onChange`  | `función` | Función que se ejecuta al cambiar el valor       | `(value: string) => void`            | `undefined`  |

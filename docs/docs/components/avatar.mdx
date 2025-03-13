@@ -1,0 +1,33 @@
+---
+title: "Avatar"
+sidebar_label: "Avatar"
+---
+
+import { AvatarExamples } from "../../src/components/AvatarExamples";
+
+# Avatar
+
+El componente `Avatar` muestra una imagen de perfil con opciones de tamaño, forma y estilos personalizados.
+
+### Uso
+
+```tsx
+import { Avatar } from "essential-materials";
+```
+
+### Ejemplos
+
+<AvatarExamples />
+
+### API
+
+| Propiedad   | Tipo                                | Descripción                          | Valores posibles                    | Default     |
+| ----------- | ----------------------------------- | ------------------------------------ | ----------------------------------- | ----------- |
+| `src`       | `string`                            | URL de la imagen                     | Cualquier URL válida                | `undefined` |
+| `alt`       | `string`                            | Texto alternativo                    | Texto libre                         | `"Avatar"`  |
+| `size`      | `"small" \| "medium" \| "large"`    | Tamaño del avatar                    | `"small"`, `"medium"`, `"large"`    | `"medium"`  |
+| `fallback`  | `string`                            | Texto de respaldo si la imagen falla | Cualquier texto                     | `undefined` |
+| `border`    | `"solid" \| "dashed" \| "dotted"`       | Borde del avatar                     | `"solid"`, `"dashed"`, `"dotted"`       | `undefined` |
+| `shape`     | `"circle" \| "square"` | Forma del avatar                     | `"circle"`, `"square"` | `"circle"`  |
+| `className` | `string`                            | Clases CSS personalizadas            | Clases adicionales                  | `""`        |
+| `onClick`   | `() => void`                        | Función ejecutada al hacer clic      | Callback de evento                  | `undefined` |

@@ -1,0 +1,41 @@
+---
+sidebar_position: 2
+title: "Vite"
+sidebar_label: "Vite"
+---
+
+## Uso con Vite
+
+Vite es una de las formas más rápidas de empezar un proyecto con React y TypeScript. Para configurarlo:
+
+1. Crea un nuevo proyecto con Vite:
+
+```bash
+npm create vite@latest mi-proyecto --template react-ts
+```
+
+2. Instala las dependencias necesarias:
+
+```bash
+cd mi-proyecto
+npm install essential-materials
+```
+
+3. Importa los componentes en tu aplicación:
+
+```tsx
+import { Button } from "essential-materials";
+import "essential-materials/dist/index.css";
+
+function App() {
+  return <Button>¡Hola, Vite!</Button>;
+}
+
+export default App;
+```
+
+Ejecuta el proyecto con:
+
+```bash
+npm run dev
+```

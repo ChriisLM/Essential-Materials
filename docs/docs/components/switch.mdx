@@ -1,0 +1,31 @@
+---
+title: "Switch"
+sidebar_label: "Switch"
+---
+
+import { SwitchExamples } from '../../src/components/SwitchExamples';
+
+# Switch
+
+El componente `Switch` permite a los usuarios alternar entre estados activado y desactivado.
+
+### Uso
+
+```tsx
+import { Switch } from "essential-materials";
+```
+
+### Ejemplos
+
+<SwitchExamples />
+
+### API
+
+| Propiedad    | Tipo                         | Descripción                                        | Valores posibles                      | Default     |
+|-------------|-----------------------------|--------------------------------------------------|--------------------------------------|------------|
+| `checked`   | `boolean`                    | Estado inicial del switch                        | `true`, `false`                     | `false`    |
+| `disabled`  | `boolean`                    | Deshabilita la interacción con el switch        | `true`, `false`                     | `false`    |
+| `loading`   | `boolean`                    | Muestra un estado de carga en el switch         | `true`, `false`                     | `false`    |
+| `size`      | `"small" \| "medium" \| "large"` | Tamaño del switch                    | `"small"`, `"medium"`, `"large"`   | `"medium"` |
+| `className` | `string`                      | Clases CSS personalizadas                       | `""` o cualquier clase válida       | `""`       |
+| `onChange`  | `(checked: boolean) => void`  | Función que se ejecuta al cambiar el estado     | `(checked: boolean) => void`       | `undefined` |

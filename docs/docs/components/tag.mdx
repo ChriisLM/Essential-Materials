@@ -1,0 +1,30 @@
+---
+title: "Tag"
+sidebar_label: "Tag"
+---
+
+import { TagExamples } from '../../src/components/TagExamples';
+
+# Tag
+
+El componente `Tag` se utiliza para mostrar etiquetas con diferentes variantes, tamaños y opciones de cierre.
+
+### Uso
+
+```tsx
+import { Tag } from "essential-materials";
+```
+
+### Ejemplos
+
+<TagExamples />
+
+### API
+
+| Propiedad   | Tipo                                      | Descripción                                  | Valores posibles                      | Default     |
+|------------|------------------------------------------|----------------------------------------------|--------------------------------------|------------|
+| `variant`  | `"default" \| "primary" \| "secondary" \| "success" \| "danger" \| "warning"` | Estilo visual de la etiqueta | `"default"`, `"primary"`, `"success"`, `"danger"`, `"warning"` | `"default"` |
+| `closable` | `boolean`                                | Permite cerrar la etiqueta                   | `true`, `false`                     | `false`    |
+| `size`     | `"small" \| "medium" \| "large"`        | Tamaño de la etiqueta                        | `"small"`, `"medium"`, `"large"`   | `"medium"` |
+| `className`| `string`                                | Clases CSS personalizadas                    | `""` o cualquier clase válida       | `""`       |
+| `onClose`  | `() => void`                            | Función que se ejecuta al cerrar la etiqueta | `() => void`                        | `undefined` |

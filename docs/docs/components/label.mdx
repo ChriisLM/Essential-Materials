@@ -1,0 +1,30 @@
+---
+title: "Label"
+sidebar_label: "Label"
+---
+
+import { LabelExamples } from '../../src/components/LabelExamples';
+
+# Label
+
+El componente `Label` se utiliza para describir los campos de entrada en formularios y mejorar la accesibilidad.
+
+### Uso
+
+```tsx
+import { Label } from "essential-materials";
+```
+
+### Ejemplos
+
+<LabelExamples />
+
+### API
+
+| Propiedad   | Tipo       | Descripción                                    | Valores posibles            | Default      |
+|------------|-----------|------------------------------------------------|-----------------------------|--------------|
+| `htmlFor`  | `string`  | ID del elemento al que se asocia el label      | Cualquier string válido     | `undefined`  |
+| `size`     | `string`  | Tamaño del texto del label                     | `"small"`, `"medium"`, `"large"` | `"medium"`   |
+| `weight`   | `string`  | Peso de la fuente                              | `"light"`, `"normal"`, `"medium"`, `"bold"` | `"normal"`  |
+| `disabled` | `boolean` | Si el label debe mostrarse deshabilitado       | `true`, `false`            | `false`      |
+| `className` | `string` | Clases CSS personalizadas                      | `""` o cualquier clase CSS válida | `""` |

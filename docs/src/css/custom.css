@@ -1,0 +1,36 @@
+/**
+ * Global CSS customization.
+ * This will override the default Infima variables.
+ */
+@import "../../../dist/index.css";
+
+/* 🌞 Modo Claro */
+:root {
+  --ifm-color-primary: #1e3a8a; /* Azul profundo */
+  --ifm-color-primary-dark: #1b3380;
+  --ifm-color-primary-darker: #192f75;
+  --ifm-color-primary-darkest: #16295f;
+  --ifm-color-primary-light: #2745a3;
+  --ifm-color-primary-lighter: #2e50b4;
+  --ifm-color-primary-lightest: #3b63d0;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(30, 58, 138, 0.1);
+}
+
+/* 🌙 Modo Oscuro */
+[data-theme="dark"] {
+  --ifm-color-primary: #5f78a5; /* Azul grisáceo */
+  --ifm-color-primary-dark: #344766;
+  --ifm-color-primary-darker: #2e3f5a;
+  --ifm-color-primary-darkest: #28374e;
+  --ifm-color-primary-light: #4a5f88;
+  --ifm-color-primary-lighter: #5a6e9c;
+  --ifm-color-primary-lightest: #6c7eb0;
+
+  --ifm-background-color: #5798ff; /* Fondo oscuro con toque azulado */
+  --ifm-navbar-background-color: #252a33; /* Navbar más gris */
+  --ifm-footer-background-color: #22262e; /* Pie de página en tono gris oscuro */
+
+  --docusaurus-highlighted-code-line-bg: rgba(59, 79, 114, 0.2);
+}
