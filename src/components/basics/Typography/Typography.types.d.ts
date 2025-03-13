@@ -1,4 +1,4 @@
-import { Colors, Fonts, FontWeights } from "../../../global";
+import { ColorsScheme as Colors, Fonts, FontWeights } from "../../../global";
 
 export type TypographyVariant =
   | "h1"

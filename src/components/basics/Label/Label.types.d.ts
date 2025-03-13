@@ -1,4 +1,4 @@
-import { FontSizes, FontWeights } from "../../../global";
+import { Sizes as FontSizes, FontWeights } from "../../../global";
 
 export interface LabelProps {
   htmlFor?: string;

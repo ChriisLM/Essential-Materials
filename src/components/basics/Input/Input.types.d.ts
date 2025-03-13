@@ -1,4 +1,4 @@
-import { FontSizes } from "../../../global";
+import { Sizes as FontSizes } from "../../../global";
 
 export type InputType =
   | "text"
@@ -12,7 +12,8 @@ export interface InputProps {
   name?: string;
   type?: InputType;
   value?: string;
-  disable?: boolean;
+  disabled?: boolean;
+  required?: boolean;
   placeholder?: string;
   size?: FontSizes;
   fullWidth?: boolean;
