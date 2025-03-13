@@ -1,0 +1,62 @@
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+}
+
+.button__outline {
+  margin-left: 1rem;
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.button__components {
+  margin-left: 1rem;
+  border: 2px solid var(--ifm-color-emphasis-100);
+  color:white
+}
+
+.features {
+  padding: 3rem 0;
+  background-color: var(--ifm-background-color);
+}
+
+.featureCard {
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--ifm-color-emphasis-100);
+  text-align: center;
+}
+
+.featureCard h3 {
+  margin-bottom: 0.5rem;
+}
