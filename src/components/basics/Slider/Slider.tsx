@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SliderProps } from "./Slider.types";
 import "./Slider.css";
 
 export function Slider({
-  value,
+  value = 0,
   min = 0,
   max = 100,
   step = 1,
@@ -15,10 +15,16 @@ export function Slider({
   onChange,
 }: SliderProps) {
   const [currentValue, setCurrentValue] = useState(value);
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    setProgress(((value - min) / (max - min)) * 100);
+  }, [value, min, max]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = Number(e.target.value);
     setCurrentValue(newValue);
+    setProgress(((newValue - min) / (max - min)) * 100);
     onChange?.(newValue);
   };
 
@@ -37,6 +43,9 @@ export function Slider({
         disabled={disabled}
         onChange={handleChange}
         className={`slider-input ${disabled ? "slider-disabled" : ""}`}
+        style={{
+          background: `linear-gradient(to right, #4caf50 0%, #4caf50 ${progress}%, #e5e7eb ${progress}%, #e5e7eb 100%)`,
+        }}
       />
       {marks && (
         <div className="slider-marks-container">

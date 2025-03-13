@@ -15,7 +15,7 @@ export function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`button button-${variant} button-${size} button-${color} button-${font} ${
+      className={`button button-${variant}-${color} button-${size} button-${font} ${
         disabled ? "button-disabled" : ""
       } ${fullWidth ? "button-fullWidth" : ""} ${className}`}
       disabled={disabled || loading}

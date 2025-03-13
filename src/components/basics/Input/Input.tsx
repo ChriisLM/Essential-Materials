@@ -8,6 +8,8 @@ export function Input({
   type = "text",
   size = "medium",
   placeholder,
+  disabled = false,
+  required = false,
   fullWidth = false,
   className = "",
   onChange,
@@ -28,13 +30,15 @@ export function Input({
         <input
           type={type}
           name={name}
+          disabled={disabled}
           value={valueText}
           placeholder={placeholder}
           onChange={(e) => handleValue(e.target.value)}
-          className={`input-field input-${size} ${
-            fullWidth ? "input-fullWidth" : ""
-          } ${className}`}
+          className={`input-field ${
+            disabled ? "input-disabled" : ""
+          } input-${size} ${fullWidth ? "input-fullWidth" : ""} ${className}`}
         />
+        {required && <span className="input-required">*</span>}
         {/* Add suffix soon */}
       </div>
     </div>
