@@ -7,10 +7,7 @@ const config: Config = {
   tagline: '',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://essential-materials.netlify.app/',
   baseUrl: '/',
 
   organizationName: 'ChriisLM',
@@ -20,8 +17,8 @@ const config: Config = {
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'es',
-    locales: ['es'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
