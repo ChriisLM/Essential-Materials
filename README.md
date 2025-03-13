@@ -1,22 +1,88 @@
-# UI-components
+# 📦 Essential Materials
 
-Una biblioteca moderna de componentes UI construida con TypeScript, CSS y empaquetada con Rollup, diseñada para crear interfaces de usuario robustas y reutilizables.
+🚀 **Essential Materials** es una librería de componentes UI para React, construida con TypeScript y CSS puro. Proporciona una colección de componentes esenciales para el desarrollo de interfaces modernas y accesibles.
 
-## 🚀 Características
+## ✨ Características
 
-- Construido con TypeScript para un desarrollo más seguro y productivo
-- Configuración optimizada con Rollup para un desarrollo rápido
-- Componentes totalmente tipados y personalizables
-- Diseño moderno y responsivo
-- Soporte para temas y estilos personalizados
-- Documentación detallada de cada componente
+- 🎨 **Diseño minimalista y flexible**
+- ⚡ **Componentes reutilizables y accesibles**
+- 🚀 **Optimizado con Rollup para mejor rendimiento**
+- 📖 **Documentado con Docusaurus**
+- 💻 **Soporte para TypeScript**
 
-## 🛠️ Tecnologías
+## 📦 Instalación
 
-- TypeScript
-- Rollup
-- React
+Puedes instalar **Essential Materials** con tu gestor de paquetes favorito:
 
-## 🤝 Contribuir
+```bash
+npm install essential-materials
+```
 
-Las contribuciones son bienvenidas!
+```bash
+yarn add essential-materials
+```
+
+```bash
+pnpm add essential-materials
+```
+
+## 🛠 Uso Básico
+
+Importa los estilos globales en tu proyecto:
+
+```tsx
+import "essential-materials/dist/index.css";
+```
+
+Y utiliza los componentes de la librería:
+
+```tsx
+import { Button } from "essential-materials";
+
+function App() {
+  return <Button>¡Haz clic aquí! 🚀</Button>;
+}
+```
+
+## 📚 Documentación
+
+Consulta la documentación completa en [Essential Materials Docs](https://essential-materials.netlify.app/).
+
+## 📂 Lista de Componentes
+
+### 🔹 Básicos
+- Avatar
+- Badge
+- Button
+- Checkbox
+- Divider
+- Input
+- Label
+- Radio
+- Select
+- Slider
+- Switch
+- Tag
+- Tooltip
+- Typography
+
+### 🔸 Compuestos
+*(Próximamente... 🚧)*
+
+## 🚀 Contribuir
+
+Si quieres contribuir a la librería, sigue estos pasos:
+
+1. 🍴 **Fork** el repositorio
+2. 🌿 Crea una nueva rama: `git checkout -b feature/nueva-funcionalidad`
+3. 💡 Implementa los cambios y haz un commit: `git commit -m "Añadida nueva funcionalidad"`
+4. 📌 Sube los cambios a tu fork: `git push origin feature/nueva-funcionalidad`
+5. 🔄 Crea un **Pull Request**
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia **MIT**.
+
+---
+
+💙 **Desarrollado con amor y código por ChriisLM.**
