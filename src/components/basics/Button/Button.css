@@ -15,30 +15,131 @@
   box-shadow: 0 0 0 2px #38bdf8, 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
-/* Variant */
+/* Variantes con colores combinados */
 
-.button-filled {
-  background-color: var(--primary-color);
-  color: var(--on-primary-color);
+/* Filled */
+.button-filled-default {
+  background-color: #d8d8d8;
+  color: #1f2937;
+}
+
+.button-filled-default:hover {
+  background-color: #e5e7eb;
+}
+
+.button-filled-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.button-filled-primary:hover {
+  background-color: #2563eb;
+}
+
+.button-filled-secondary {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+.button-filled-secondary:hover {
+  background-color: #7c3aed;
+}
+
+/* Outlined */
+.button-outlined-default {
+  background-color: transparent;
+  border: 2px solid #d8d8d8;
+  color: currentColor;
+}
+
+.button-outlined-default:hover {
+  background-color: #d8d8d8;
+}
+
+.button-outlined-primary {
+  background-color: transparent;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+}
+
+.button-outlined-primary:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.button-outlined-secondary {
+  background-color: transparent;
+  color: #8b5cf6;
+  border: 2px solid #8b5cf6;
+}
+
+.button-outlined-secondary:hover {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+/* Dashed */
+.button-dashed-default {
+  background-color: transparent;
+  color: currentColor;
+  border: 2px dashed #d8d8d8;
+}
+
+.button-dashed-default:hover {
+  background-color: #d8d8d8;
+}
+
+.button-dashed-primary {
+  background-color: transparent;
+  color: #3b82f6;
+  border: 2px dashed #3b82f6;
+}
+
+.button-dashed-primary:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.button-dashed-secondary {
+  background-color: transparent;
+  color: #8b5cf6;
+  border: 2px dashed #8b5cf6;
+}
+
+.button-dashed-secondary:hover {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+/* Text */
+.button-text-default {
+  background-color: transparent;
+  color: currentColor;
   border: none;
 }
 
-.button-outlined {
-  background-color: transparent;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+.button-text-default:hover {
+  background-color: #d8d8d8;
 }
 
-.button-dashed {
+.button-text-primary {
   background-color: transparent;
-  color: var(--primary-color);
-  border: 2px dashed var(--primary-color);
-}
-
-.button-text {
-  background-color: transparent;
-  color: var(--primary-color);
+  color: #3b82f6;
   border: none;
+}
+
+.button-text-primary:hover {
+  background-color: #dbeafe;
+}
+
+.button-text-secondary {
+  background-color: transparent;
+  color: #8b5cf6;
+  border: none;
+}
+
+.button-text-secondary:hover {
+  background-color: #ede9fe;
 }
 
 /* Fonts */
@@ -76,35 +177,6 @@
   padding-inline: 1.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-/* Colors */
-
-.button-default {
-  background-color: #f3f4f6;
-  color: #1f2937;
-}
-
-.button-default:hover {
-  background-color: #e5e7eb;
-}
-
-.button-primary {
-  background-color: #3b82f6;
-  color: white;
-}
-
-.button-primary:hover {
-  background-color: #2563eb;
-}
-
-.button-secondary {
-  background-color: #8b5cf6;
-  color: white;
-}
-
-.button-secondary:hover {
-  background-color: #7c3aed;
 }
 
 /* Disabled */

@@ -44,15 +44,15 @@
 /* Border Styled */
 
 .avatar-solid {
-  border: 1px solid black;
+  border: 1px solid;
 }
 
 .avatar-dashed {
-  border: 1px dashed black;
+  border: 1px dashed;
 }
 
 .avatar-dotted {
-  border: 1px dotted black;
+  border: 1px dotted;
 }
 
 /* Text Error */

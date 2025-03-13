@@ -1,5 +1,7 @@
 .tag-container {
   display: inline-flex;
+  width: fit-content;
+  height: fit-content;
   align-items: center;
   border-radius: 6px;
   font-family: var(--Font-Open-Sans);
@@ -33,7 +35,6 @@
 .tag-default {
   background-color: #6b72802a;
   border: 1px solid #6b7280;
-  color: black;
 }
 
 .tag-primary {

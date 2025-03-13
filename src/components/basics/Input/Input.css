@@ -44,3 +44,15 @@
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+
+/* Required */
+.input-required {
+  margin-left: 0.25rem;
+  color: #ef4444;
+}
+
+/* Disabled */
+.input-disabled {
+  background-color: #f3f4f6;
+  color: #9ca3af;
+}
