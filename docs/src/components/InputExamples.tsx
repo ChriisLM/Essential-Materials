@@ -87,7 +87,7 @@ export function InputExamples() {
         description="Input desabilitado."
         code={InputCodes.Disable}
       >
-        <Input placeholder="Desabilitado" type="text" disable />
+        <Input placeholder="Desabilitado" type="text" disabled />
       </Container>
       <Container
         title="Tipos"
